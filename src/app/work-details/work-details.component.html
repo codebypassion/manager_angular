@@ -1,0 +1,330 @@
+
+<div class="workingDivOuter width95Per">
+    <div class=" workingDiv project-cards">
+      <div class="col-md-12 project-list">
+
+      </div>
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body px-0">
+
+            <div class="tab-content" id="top-tabContent">
+              <div class="tab-pane fade show active" id="categoryDetailPg" role="tabpanel" aria-labelledby="categoryDetailPg">
+                <div class="row mb-4 right-header p-0 cstmFlex">
+                  <div class="col-6 px-0 d-flex align-items-center justify-content-start">
+                    <div class="col-1 px-0">
+                      <span onclick="history.back()" class="material-symbols-outlined backBtn mx-0">
+                        arrow_back
+                      </span>
+                    </div>
+                    <h2 class="rem1 mb-0 mx-1">Need Bikers</h2>
+                  </div>
+
+                  <div class="col-6 px-0 d-flex align-items-center justify-content-end">
+                    <a class="mx-2 text-decoration-none rounded font12 shwbtns" href="#">Show
+                      Applications</a>
+                    <a class="ms-2 rounded font12 shwbtns" href="#">Show Executions</a>
+                  </div>
+
+
+                </div>
+                <div class="row rowBGColor">
+                  <div class="col-md-12 mb-2 bgLight rounded">
+                    <div class="row p-3 rounded justify-content-between">
+                      <div class="col-md-4 d-flex align-items-start justify-content-start">
+                        <p class="title mb-0">WorkRef-ID</p>
+                        <p class=" border rounded px-1 mb-0 newIds mx-2">WORKID234FG212</p>
+                      </div>
+
+                      <div class="col-md-4 d-flex align-items-start justify-content-center">
+                        <p class="title mb-0">Status</p>
+                        <p class=" border rounded px-1 mb-0 mx-2 activeCol">Executed</p>
+                      </div>
+
+                      <div class="col-md-4 d-flex align-items-start justify-content-end">
+                        <p class="title mb-0">Admin Status</p>
+                        <select class="cstmSelectTag statusBtn mx-2">
+                          <option>Redraft</option>
+                          <option>Started</option>
+                          <option>Applied</option>
+                          <option>Approval Pending</option>
+                          <option>Rejected</option>
+                          <option>Approved</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="row rounded flex-column">
+                      <div class="row align-items-center justify-content-between px-3 pt-3">
+                        <div class=" col-6 d-flex align-items-center px-0">
+                          <h5 class="px-0 title2">Work Details</h5>
+                          <a href="#" class="ms-2"><span class="material-symbols-outlined iconEditFont16">
+                              edit
+                            </span></a>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-2 minH130 bgLight rounded" *ngIf="work">
+
+                        <div class="row px-3 pt-3">
+                          <div class="col-md-12 mb-3">
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6">
+                                <div class="d-flex mb-3 align-items-start flex-column">
+                                  <p class="title2 mb-0">Title</p>
+                                  <p class="data mb-0">{{work.title}}</p>
+                                </div>
+                                <div class="d-flex align-items-start flex-column">
+                                  <p class="title2 mb-0">Category Title</p>
+                                  <p class="data mb-0">{{work.workCategoryTitle}}</p>
+                                </div>
+                              </div>
+                              <div class="col-6 d-flex  align-items-center justify-content-end px-0">
+                                <img class="bannerImg7575 rounded" src="https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=872&amp;q=80" alt="">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <p class="title2 mb-0">Description</p>
+                            <p class="data">{{work.workCategoryDescription}}</p>
+                          </div>
+                        </div>
+
+                        <div class="d-flex mb-3 p-3">
+                          <div class="col-4">
+                            <p class="title2 mb-0">Created On</p>
+                            <p class="data">22/33/44</p>
+                          </div>
+                          <div class="col-4">
+                            <p class="title2 mb-0">Modified On</p>
+                            <p class="data">22/33/44</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 align-items-center justify-content-between px-0 pt-3">
+                        <div class=" col-6 d-flex align-items-center px-0">
+                          <h5 class="px-0 title2">Generator</h5>
+                          <a href="#" class="ms-2 invisible"><span class="material-symbols-outlined iconEditFont16">
+                              edit
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-2 bgLight rounded px-3" *ngIf="work">
+                        <div class="d-flex col-12 m-auto align-items-center py-3 position-relative">
+                          <img class="img5050 rounded me-2" src="{{work.generatorPic}}" alt="">
+                          <p class="title2 mb-0 mx-2">{{work.generatorName}}</p>
+                          <p class=" border rounded px-1 mb-0 font11px position-absolute cstmPosition">{{work.isGeneratorBusiness}}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-flex align-items-center justify-content-between px-0 pt-3">
+                        <div class=" col-6 d-flex align-items-center mb-0 px-0">
+                          <h5 class="px-0 title2">Work Location</h5>
+                         
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-12 mb-2 bgLight rounded">
+                        <div class="row px-3 pt-3">
+                          <div class="col-10" *ngFor="let location_item of locationList">
+                            <span class="data">{{location_item.location}}</span>                            
+                              <a target="_blank" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination={{ location_item.locatioCodes}}"><mat-icon class="material-symbols-outlined" style="cursor: pointer; margin-left: 10px;">location_on</mat-icon>
+                              </a>
+                              <!-- <mat-icon class="material-symbols-outlined" style="cursor: pointer;">location_on</mat-icon> -->
+                          </div>
+<!-- 
+                          <div class="col-2">
+                            <p class="title2 mb-0">Radius</p>
+                            <p class="data">{{location.radius}}</p>
+                          </div> -->
+                        </div>
+                        <div class="row p-3">
+                          <div class="col-5">
+                            <!-- <p class="data"><mat-icon [attr.data-custom-value]="myData" (click)="redirectToMap()">location_on</mat-icon> -->
+                              <!-- <span [attr.data-custom-value]="myData" (click)="redirectToMap()">click</span> -->
+                            
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center justify-content-between px-3 pt-3">
+                        <div class=" col-6 d-flex align-items-center px-0">
+                          <h5 class="  px-0 title2">Work Rule</h5>
+                          <a href="#" class="ms-2"><span class="material-symbols-outlined iconEditFont16">
+                              edit
+                            </span></a>
+                        </div>
+
+                        <!-- <p class="col-auto cstmCategoryBadge idBadgeCo">
+                          GENID75748
+                        </p> -->
+                      </div>
+                      <div class="col-md-12 minH130 bgLight rounded">
+                        <div class="row align-items-center justify-content-between px-3 pt-3">
+                          <div class="row mb-3">
+                            <div class="col-6">
+                              <p class="title2 mb-0">Total Work Count (Min)</p>
+                              <p class="data">10</p>
+                            </div>
+                            <div class="col-6">
+                              <p class="title2 mb-0">Total Work Count (Max)</p>
+                              <p class="data">20</p>
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <div class="col-6">
+                              <p class="title2 mb-0">Per Executor Work Count (Min)</p>
+                              <p class="data">10</p>
+                            </div>
+                            <div class="col-6">
+                              <p class="title2 mb-0">Per Executor Work Count (Max)</p>
+                              <p class="data">20</p>
+                            </div>
+                          </div>
+
+                          <div class="row mb-1">
+                            <div class="col-6">
+                              <p class="title2 mb-0">Payout Amount</p>
+                              <p class="data">10,000</p>
+                            </div>
+                            <div class="col-5">
+                              <div class="d-flex mb-2  rounded">
+                                <label class=" title2 col-form-label m-r-10">Instant Payout</label>
+                                <div class="flex-grow-1 text-end">
+                                  <div class="form-switch">
+                                    <input class="form-check-input" id="multinputBtn" type="checkbox" required="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-6">
+                              <p class="title2 mb-0">Currency</p>
+                              <p class="data">Rupees</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- <h5 class="fontS15 px-3 pt-3 text-underline">More Details</h5> -->
+                    <div class="row align-items-center justify-content-between px-3 pt-3">
+                      <div class=" col-6 d-flex align-items-center px-1">
+                        <h5 class="px-0 title2">More Details</h5>
+                        <a href="#" class="ms-2 invisible"><span class="material-symbols-outlined iconEditFont16">
+                            edit
+                          </span></a>
+                      </div>
+                    </div>
+                    <div class="row ms-md-1 rounded flex-column">
+                      <div class="col-md-12 mb-1 bgLight minH420 rounded">
+
+                        <div class="row px-3 pt-3">
+                          <div class="col-md-12 my-2">
+                            <div class="d-flex align-items-center">
+                              <p class="title mb-0">Education Qualification ?</p>
+                              <a href="#" class="ms-2">
+                                <span class="material-symbols-outlined iconEditFont16">edit</span>
+                              </a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="data width80">Lorem ipsum.</span>
+                              <span class="material-symbols-outlined data">
+                                picture_as_pdf
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 my-2">
+                            <div class="d-flex align-items-center">
+                              <p class="title mb-0">Education Qualification ?</p>
+                              <a href="#" class="ms-2">
+                                <span class="material-symbols-outlined iconEditFont16">edit</span>
+                              </a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="data width80">Graduate</span>
+
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 my-2">
+                            <div class="d-flex align-items-center">
+                              <p class="title mb-0">Education Qualification ?</p>
+                              <a href="#" class="ms-2">
+                                <span class="material-symbols-outlined iconEditFont16">edit</span>
+                              </a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="data width80">Graduate</span>
+                              <span class="material-symbols-outlined data">
+                                picture_as_pdf
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 my-2">
+                            <div class="d-flex align-items-center">
+                              <p class="title mb-0">Education Qualification ?</p>
+                              <a href="#" class="ms-2">
+                                <span class="material-symbols-outlined iconEditFont16">edit</span>
+                              </a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="data width80">Graduate</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vertically centered modal for delete-->
+              <div class="modal fade" id="delCategoryModal" tabindex="-1" role="dialog" aria-labelledby="delCategoryModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header bdrNone justify-content-center">
+                      <!-- <h5 class="modal-title">Modal title</h5> -->
+                      <!-- <span class="material-symbols-outlined modal-title delIcon">
+                        delete_forever
+                      </span> -->
+                      <img src="../assets/images/newImages/delete.png" class=" modal-title delIcon" alt="">
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="text-center">
+                        Are you sure you want to <br>delete this category?
+                      </h5>
+                      <p class="text-center">
+                        "Category name"
+                      </p>
+                    </div>
+                    <div class="modal-footer bdrNone justify-content-evenly">
+                      <button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-danger" type="button">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

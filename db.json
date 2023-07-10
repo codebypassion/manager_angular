@@ -1,0 +1,80 @@
+{
+  "work": [
+    {
+      "workRefId": "WORKID5463321D4",
+      "title": "Need Bikers",
+      "description": "Earn upto Rs 500 everyday si the new beginni",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=80",
+      "location": "Noida",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "workStatus": "Submitted",
+      "status": "Approval",
+      "id": 1
+    },
+    {
+      "workRefId": "WORKID5463321D5",
+      "title": "Need teacher",
+      "description": "Earn upto Rs 1000 everyday si the new beginni",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Agra",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=80",
+      "workStatus": "Started",
+      "status": "Applied",
+      "id": 2
+    }
+  ],
+  "location": [
+    {
+      "location":"Noida, sector-62, Sector-63, B-154",
+      "locatioCodes":"32.0098636,77.3117298",
+      "id": 1
+    },
+    {
+      "location":"Agra, Kamla nagar, Sector-68, L-78",
+      "locatioCodes":"32.0098636,77.3117298",
+      "id": 2
+    }
+  ],
+  "work_app":[
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"REDRAFT",
+      "generatorStatus":"APPROVED",
+      "final_status":"APPROVAL_PENDING",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 1
+
+    },
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"Redraft",
+      "generatorStatus":"Approved",
+      "final_status":"Approval_Pending",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 2
+
+    }
+  ]
+}

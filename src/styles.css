@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f5f5f5; }
+a {
+    text-decoration: none;
+}
+.card-body {
+    background-color: white !important;
+}
+.font14px {
+    font-size: 14px;
+}
+.cardNoBorder {
+    border: none;
+}
+.width95Per {
+    width: 100%;
+}
+a.active2 {
+    background-color: #DDDDDD;
+}
+
+.workingDivOuter{
+    padding: 20px 0px 0px 25px;
+}
+
+.workingDiv{
+    width: 100%;
+    padding: 0px 15px;
+    margin: auto;
+}

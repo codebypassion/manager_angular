@@ -1,0 +1,580 @@
+<div class="workingDivOuter width95Per">
+    <div class="workingDiv project-cards">
+      <div class="col-md-12 project-list">
+
+      </div>
+      <div class="col-sm-12">
+        <div class="card mb-0 cardNoBorder">
+          <div class="card-body px-0">
+
+            <div class="tab-content" id="top-tabContent">
+              <div class="row">
+                <h2 class="rem1 px-0">Complaints</h2>
+              </div>
+
+              <!-- complaints starts -->
+              <div class="tab-pane fade show active" id="complaints" role="tabpanel" aria-labelledby="top-tasks-tab">
+                <div class="row mb-4 p-0 d-flex justify-content-between">
+                  <div class="col-md-6 left-header col-md-6 horizontal-wrapper ps-0 d-flex align-items-center">
+                    <div class="input-group">
+                      <div class="input-group-prepend"> <span class="input-group-text mobile-search"
+                        ><mat-icon
+                          aria-hidden="false"
+                          aria-label="Example home icon"
+                          fontIcon="search"
+                        ></mat-icon
+                      ></span></div>
+                      <input class="form-control" type="text" placeholder="Search Here...">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 justify-content-end d-flex">
+                    <ul class="nav-menus cstmNavMenusWidth d-flex align-items-center px-0">
+                      <li class=" onhover-dropdown p-0 me-0">
+                        <div class="d-flex profile-media">
+                          <div class="d-flex statusFilter justify-content-around">
+                            <span class="status">Type</span>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                              </span>                          </div>
+                        </div>
+
+                        <ul class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div" id="top-tab" role="tablist">
+
+                          <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink">Payout</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul class="nav-menus cstmNavMenusWidth d-flex align-items-center px-0">
+                      <li class=" onhover-dropdown p-0 me-0">
+                        <div class="d-flex profile-media">
+                          <div class="d-flex statusFilter justify-content-around">
+                            <span class="status">Status</span>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                              </span>                          </div>
+                        </div>
+
+                        <ul class="nav nav-tabs minWidth120 cstmDraft border-tab dirColumn profile-dropdown onhover-show-div" id="top-tab" role="tablist">
+
+                          <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink">Open</a>
+                          </li><li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink">In process</a>
+                          </li><li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink">Closed</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="row basic_table">
+                  <div class="table-responsive cstmTable p-2 tableFixed">
+                    <table class="table fold-table">
+                      <thead>
+                        <tr class="bdrBtmBlue">
+                          <th class="cstmTh" scope="col">Complainant</th>
+                          <th class="cstmTh" scope="col">Ticket-ID</th>
+                          <th class="cstmTh" scope="col">Type</th>
+                          <th class="cstmTh" scope="col">Status</th>
+                          <th class="cstmTh" scope="col">Account Type</th>
+                          <th class="cstmTh" scope="col">Complaint Details</th>
+                          <th class="cstmTh" scope="col">Work-ID</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" routerLink="/complaint-details">TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr class="view bgroud mb-1">
+                          <td class="cstmTd minWidthName">
+                            <a href="../others/personal.html">
+                              <div class="grouping d-flex justify-content-evenly">
+                                <div class="div1"><img class="img-30 me-2 rounded-circle" src="../assets/images/avtar/3.jpg" alt=""></div>
+                                <div class="div2 d-flex flex-column align-items-start">
+                                  <p class="mb-0 headTitle">Saksham Mishra</p>
+                                  <p class="mb-0">2 mins ago</p>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a class="text-underline" href="./complaint_d.html"> TCKTID3212</a>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class="pmargin cmnBadgeDesign workId"> <span class="wiSpan">
+                                  PAYOUT</span>
+                              </p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <p class=" border rounded px-1 mb-0 pending">Pending</p>
+                            </div>
+                          </td>
+
+                          <td class="cstmTd">
+                            <div class="d-flex flex-column align-items-start">
+                              <p class=" border rounded px-1 mb-0 font11px">Business</p>
+                              <p class=" border rounded px-1 mt-2 newIds">Executor</p>
+                            </div>
+                          </td>
+                          <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                          <td class="cstmTd minWidth300">
+                            <div class=" d-flex flex-column align-items-start position-relative">
+                              <p class="mb-0 headTitle">Icorrect Payout</p>
+                              <p class="catDesc mx-0 px-0">I am writing to address an issue with my recent payout
+                                for the month of April. Upon reviewing my bank statement, I have noticed that the
+                                payout amount deposited into my account is incorrect.</p>
+                              <p class="tooltip newTooltipPosition">I am writing to address an issue with my
+                                recent payout for the month of April. Upon reviewing my bank statement, I have
+                                noticed that the payout amount deposited into my account is incorrect.</p>
+                            </div>
+                          </td>
+                          <td class="cstmTd">
+                            <div class="d-flex">
+                              <a href="./works_d.html">
+                                <p class="data text-underline"> WRKID3212</p>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- complaints ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

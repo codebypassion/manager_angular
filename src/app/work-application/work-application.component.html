@@ -1,0 +1,381 @@
+<!-- Container-fluid starts-->
+<div class="workingDivOuter width95Per">
+  <div class="workingDiv project-cards">
+    <div class="col-sm-12">
+      <div class="card mb-0 cardNoBorder">
+        <div class="card-body px-0">
+          <div class="tab-content" id="top-tabContent">
+            <div class="row">
+              <h2 class="rem1 px-0">Works Applications</h2>
+            </div>
+            <!-- work applications starts -->
+            <div
+              class="tab-pane fade show active"
+              id="workApplications"
+              role="tabpanel"
+              aria-labelledby="top-tasks-tab"
+            >
+              <div class="row mb-3 p-0 d-flex justify-content-between">
+                <div
+                  class="col-md-6 left-header col horizontal-wrapper ps-0 d-flex align-items-center"
+                >
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text mobile-search"
+                        ><mat-icon
+                          aria-hidden="false"
+                          aria-label="Example home icon"
+                          fontIcon="search"
+                        ></mat-icon
+                      ></span>
+                    </div>
+                    <input
+                      class="form-control"  [(ngModel)]="searchTerm" (input)="filterBySearchTerm()"
+                      type="text"
+                      placeholder="Search Here..."
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 d-flex align-items-center justify-content-end px-0"
+                >
+                  <ul
+                    class="nav-menus cstmNavMenusWidth d-flex align-items-center px-0"
+                  >
+                    <li class="onhover-dropdown p-0 me-0">
+                      <div class="d-flex profile-media">
+                        <div class="d-flex statusFilter justify-content-around">
+                          <span class="status">Admin Status</span>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+
+                      <ul
+                        class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div"
+                        id="top-tab"
+                        role="tablist"
+                      >
+                      
+                      <li class="nav-item newNavItem">
+                        <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('all')">All</a>
+                      </li>
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink"  (click)="filterByAdminState('Started')">Started</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Applied')">Applied</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Approval')"
+                            >Approval Pending</a
+                          >
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Rejected')">Rejected</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Redraft')">Redraft</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Approved')">Approved</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul
+                    class="nav-menus cstmNavMenusWidth d-flex align-items-center px-0"
+                  >
+                    <li class="onhover-dropdown p-0 me-0">
+                      <div class="d-flex profile-media">
+                        <div class="d-flex statusFilter justify-content-around">
+                          <span class="status">Gen Status</span>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+
+                      <ul
+                        class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div"
+                        id="top-tab"
+                        role="tablist"
+                      >
+                      
+                      <li class="nav-item newNavItem">
+                        <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('all')">All</a>
+                      </li>
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink"  (click)="filterBygeneratorState('Started')">Started</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterBygeneratorState('Applied')">Applied</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterBygeneratorState('Approval_Pending')"
+                            >Approval Pending</a
+                          >
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterBygeneratorState('Rejected')">Rejected</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterBygeneratorState('Redraft')">Redraft</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterBygeneratorState('Approved')">Approved</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul
+                    class="nav-menus cstmNavMenusWidth d-flex align-items-center px-0"
+                  >
+                    <li class="onhover-dropdown p-0 me-0">
+                      <div class="d-flex profile-media">
+                        <div class="d-flex statusFilter justify-content-around">
+                          <span class="status">Final Status</span>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+
+                      <ul
+                        class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div"
+                        id="top-tab"
+                        role="tablist"
+                      >
+                      
+                      <li class="nav-item newNavItem">
+                        <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('all')">All</a>
+                      </li>
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink"  (click)="filterByFinalState('Started')">Started</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByFinalState('Applied')">Applied</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByFinalState('Approval_Pending')"
+                            >Approval Pending</a
+                          >
+                        </li>
+
+                       
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByFinalState('Rejected')">Rejected</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByFinalState('Redraft')">Redraft</a>
+                        </li>
+
+                        <li class="nav-item newNavItem">
+                          <a class="nav-link removePadd newNavLink" (click)="filterByFinalState('Approved')">Approved</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row basic_table">
+                <div class="table-responsive cstmTable p-2 tableFixed">
+                  <table class="table fold-table">
+                    <thead>
+                      <tr class="bdrBtmBlue">
+                        <th class="cstmTh" scope="col">Applicant</th>
+                        <th class="cstmTh" scope="col">App Acc Type</th>
+                        <th class="cstmTh" scope="col">AppRef-ID</th>
+                        <th class="cstmTh" scope="col">Admin Status</th>
+                        <th class="cstmTh" scope="col">Gen Status</th>
+                        <th class="cstmTh" scope="col">Final Status</th>
+                        <th class="cstmTh" scope="col">Work Details</th>
+                        <th class="cstmTh" scope="col">Generator</th>
+                        <th class="cstmTh" scope="col">Gen Acc Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="view bgroud mb-1" *ngFor="let work_list of filterWorkList">
+                        <td class="cstmTd minWidthName">
+                          <a href="../others/personal.html">
+                            <div class="grouping d-flex justify-content-evenly">
+                              <div class="div1">
+                                <img
+                                  class="img-30 me-2 rounded-circle"
+                                  src="{{work_list.applicanPic}}"
+                                  alt=""
+                                />
+                              </div>
+                              <div
+                                class="div2 d-flex flex-column align-items-start"
+                              >
+                                <p class="mb-0 headTitle">{{work_list.applicantName}}</p>
+                                <p class="mb-0">2 mins ago</p>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="cstmTd">
+                          <div class="d-flex">
+                            <p class="border rounded px-1 mb-0 font11px">
+                              {{work_list.isApplicantBusiness}}
+                            </p>
+                          </div>
+                        </td>
+                        <td class="cstmTd">
+                          <div class="d-flex">
+                            <a
+                              class="text-underline"
+                              routerLink="/work-app-details"
+                            >
+                              {{work_list.applicationRefId}}</a
+                            >
+                          </div>
+                        </td>
+
+                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
+                        <td class="cstmTd minWidth145">
+                          <div class="d-flex">
+                            <p class="border rounded px-1 mb-0 draftCol">
+                              {{work_list.adminStatus}}
+                            </p>
+                          </div>
+                        </td>
+
+                        <td class="cstmTd minWidth145">
+                          <div class="d-flex">
+                            <p class="border rounded px-1 mb-0 activeCol">
+                              {{work_list.generatorStatus}}
+                            </p>
+                          </div>
+                        </td>
+
+                        <td class="cstmTd minWidth145">
+                          <div class="d-flex">
+                            <p class="border rounded px-1 mb-0 pending">
+                              {{work_list.final_status}}
+                            </p>
+                          </div>
+                        </td>
+
+                        <td class="cstmTd minWidth300">
+                          <div
+                            class="d-flex flex-column align-items-start position-relative"
+                          >
+                            <p class="mb-0 headTitle">{{work_list.workCategoryTitle}}</p>
+                            <!-- <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, quo.</p> -->
+                            <p class="catDesc mx-0 px-0">
+                              {{work_list.workCategoryDescription}}
+                            </p>
+                            <p class="tooltip newTooltipPosition">
+                              Earn upto Rs 500 everyday si the new beginning and
+                              that why you are the best Lorem ipsum dolor sit
+                              amet consectetur adipisicing elit. Maxime placeat
+                              repudiandae iusto ipsa eligendi provident deleniti
+                              aspernatur quaerat suscipit deserunt tenetur enim,
+                              earum sunt, voluptatibus non dignissimos
+                              repellendus minima adipisci.
+                            </p>
+                          </div>
+                        </td>
+
+                        <td class="cstmTd">
+                          <a href="../others/business.html">
+                            <div class="grouping d-flex justify-content-evenly">
+                              <div class="div1">
+                                <img
+                                  class="genImg me-2 rounded-circle"
+                                  src="{{work_list.generatorPic}}"
+                                  alt=""
+                                />
+                              </div>
+                              <div
+                                class="div2 d-flex flex-column align-items-start"
+                              >
+                                <p class="mb-0 headTitle">{{work_list.generatorName}}</p>
+                                <p class="mb-0">2 mins ago</p>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+
+                        <td class="cstmTd">
+                          <div class="d-flex">
+                            <p class="border rounded px-1 mb-0 font11px">
+                              {{work_list.isGeneratorBusiness}}
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </div>
+                      </div>
+            </div>
+          </div>
+            <!-- work applications ends -->
+    
+    <!-- Modal -->
+    <div class="product-wrapper-grid">
+      <div class="modal fade" id="exampleModalCenter16">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="product-box row">
+                <div class="product-details col-lg-12 text-start">
+                  <a href="product-page.html">
+                    <h4>HomeWork</h4>
+                  </a>
+
+                  <div class="product-view">
+                    <h6 class="f-w-600">Task Details</h6>
+                    <p class="mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat, eligendi! Necessitatibus ipsam dignissimos odit
+                      vero!
+                    </p>
+                  </div>
+                  <div class="product-qnty">
+                    <div class="addcart-btn">
+                      <button
+                        class="btn btn-primary me-3"
+                        data-bs-dismiss="modal"
+                      >
+                        Decline
+                      </button>
+                      <button class="btn btn-primary" data-bs-dismiss="modal">
+                        Approve
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
