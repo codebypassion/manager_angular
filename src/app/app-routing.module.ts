@@ -8,6 +8,8 @@ import { OngoingWorkComponent } from './ongoing-work/ongoing-work.component';
 import { OngoingWorkDetailsComponent } from './ongoing-work-details/ongoing-work-details.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { ComplaintsDetailsComponent } from './complaints-details/complaints-details.component';
+import { IndividulesComponent } from './individules/individules.component';
+import { BusinessComponent } from './business/business.component';
 
 const routes: Routes = [
   {
@@ -46,6 +48,14 @@ const routes: Routes = [
     path:'complaint-details',
     component:ComplaintsDetailsComponent,
   },
+  {
+    path:'individuals',
+    component:IndividulesComponent,
+  },
+  {
+    path:'business',
+    component:BusinessComponent,
+  }
 ];
 
 @NgModule({

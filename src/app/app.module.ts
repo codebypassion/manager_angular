@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { BusinessComponent } from './business/business.component';
+import { IndividulesComponent } from './individules/individules.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     OngoingWorkComponent,
     OngoingWorkDetailsComponent,
     ComplaintsComponent,
-    ComplaintsDetailsComponent
+    ComplaintsDetailsComponent,
+    BusinessComponent,
+    IndividulesComponent
   ],
   imports: [
     BrowserModule,

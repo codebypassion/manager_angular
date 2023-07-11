@@ -9,6 +9,29 @@
               <h2 class="rem1 px-0">Works Applications</h2>
             </div>
             <!-- work applications starts -->
+            <ng-container *ngIf="filterWorkList.length === 0; else hasData">
+                  <!-- No Data page starts-->
+                  <div
+                  class="tab-pane fade show active"
+                  id="noDataCat"
+                  role="tabpanel"
+                  aria-labelledby="noData"
+                >
+                  <div class="error-wrapper mb-4">
+                    <div class="container">
+                      <div class="svg-wrraper">
+                        <img class="svgImg" src="../assets/images/undraw/noData.svg" alt="no data">
+                      </div>
+                      <div class="col-md-8 offset-md-2">
+                        <h2>Nothing to show.</h2>
+                        <p class="sub-content">Currently, there is no Category present.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <ng-template #hasData>
+
             <div
               class="tab-pane fade show active"
               id="workApplications"
@@ -328,7 +351,9 @@
                       </div>
                       </div>
             </div>
+            </ng-template>
           </div>
+        
             <!-- work applications ends -->
     
     <!-- Modal -->

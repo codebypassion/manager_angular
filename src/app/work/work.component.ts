@@ -12,12 +12,16 @@ export class WorkComponent implements OnInit {
   workList: work[] = [];
   filterWorkList: work[] = [];
   searchTerm:string='';
+  workname = "lavi"
 
   constructor(private workService: WorkService, private router:Router) {}
 
   ngOnInit(): void {
     this.getList();
   }
+sum(){
+  return 100;
+}
 
   getList(): void {
     this.workService.getWork().subscribe((result: work[]) => {
