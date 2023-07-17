@@ -1,3 +1,20 @@
-.workRefId{
-    cursor: pointer;
+
+.location_deg{
+    font-size: 12px !important;
+    /* font-weight: 500; */
+    color: black;
+}
+.font_Deg{
+    font-size: 12px !important;
+    color: gray;
+}
+
+.chip_deg{
+    margin-top: -8px; 
+    border-radius: 50pt;
+     background-color: #f9ebf0;
+      color: #c2185b;
+      padding: 1px 5px;
+
+      border: none !important;
 }

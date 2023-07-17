@@ -1,0 +1,185 @@
+<!-- Container-fluid starts-->
+<div class="container width95Per">
+  <div class="row project-cards">
+    <div class="col-md-12 project-list"></div>
+    <div class="col-sm-12 px-0">
+      <div class="card mb-0 cardNoBorder">
+        <div class="card-body px-0">
+          <div class="tab-content" id="top-tabContent">
+            <!-- back button -->
+            <div
+              class="borderBottomNeeded row align-items-center justify-content-between mb-4 right-header cstmFlex"
+            >
+            <div class="col-md-4 p-0 d-flex align-items-center">
+              <span class="bckBtnTitle">{{ work.name }}</span>
+               
+            </div>
+            <div
+              class="col-auto px-0 d-flex align-items-center justify-content-end icon_set"
+            >
+            <a
+                mat-list-item
+                routerLink="/works"
+                routerLinkActive="active2"
+                class="sidebarListHeight50"          
+              >
+                    <mat-icon class="material-symbols-outlined">jump_to_element</mat-icon>
+              </a>            
+              
+              <a
+                mat-list-item
+                routerLink="/work-application"
+                routerLinkActive="active2"
+                class="sidebarListHeight50"
+              >
+                <span class="material-symbols-outlined">
+                  strategy
+                  </span>
+              </a>
+              <a
+                mat-list-item
+                routerLink="/ongoing-work"
+                routerLinkActive="active2"
+                class="sidebarListHeight50"
+              >
+                <span class="material-symbols-outlined">
+                  nature_people
+                  </span>
+              </a>
+            </div>
+
+            </div>
+            <!-- Cateogry Detail -->
+
+            <div
+              class="tab-pane fade show active width97MarginAuto"
+              id="categoryDetailPg"
+              role="tabpanel"
+              aria-labelledby="categoryDetailPg"
+            >
+              <div class="rowBGColor">
+                <div class="px-2 pt-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <!-- dropdown ends here -->
+                  </div>
+                
+                    <div class="post-header justify-content-start display">
+                        <div class="d-flex">
+                          <img class="img-thumbnail rounded-circle me-3 img_deg" src="{{work.photo}}"
+                            alt="Generic placeholder image">
+                          <div class="flex-grow-1 align-self-center">
+                            <p class="title2 mb-0">{{work.name}}</p>
+                            <p class="data mb-0">{{work.phone}}<img src="../assets/phone_icon.png" alt="" class="logo_style"></p>
+                            <p class="data mb-0">{{work.email}}<img src="../assets/mail.png" class="logo_style"></p>
+                          </div>
+                        </div>
+                        <span class="material-symbols-outlined mx-2" style="color:#12d055; font-size: 30px;">
+                          verified
+                        </span>
+                        <div
+                        class="col-auto px-0 d-flex align-items-center justify-content-end"
+                      >
+                        <p class="mb-0 me-2 bdrGrey rounded pendig padding2px margin_set">
+                          <select class="cstmSelectTag">
+                            <option>Draft</option>
+                            <option>Inactive</option>
+                            <option>Active</option>
+                            <option>Used</option>
+                            <option>Coming Soon</option>
+                            <option>Removed</option>
+                          </select>
+                        </p>
+                      </div>
+                      </div>
+
+                      <div class="des_p">
+                        <p>{{work.intro}}</p>
+                        <div class="manage">
+                        <ul class="post-comment row">
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-1">DOB</p>
+                            <p class="data">{{work.dob}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Gender</p>
+                            <p class="data">{{work.gender}}</p>
+                          </li>
+                        </ul>
+                        <!-- <ul class="post-comment row">
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Address</p>
+                            <p class="data">{{work.address}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">City</p>
+                            <p class="data">{{work.city}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Postal Code</p>
+                            <p class="data">{{work.postal_code}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">State</p>
+                            <p class="data">{{work.state}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Country</p>
+                            <p class="data">{{work.country}}</p>
+                          </li>
+                        </ul> -->
+
+                        <ul class="post-comment row">
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Created On</p>
+                            <p class="data">{{work.createdOn}}</p>
+                          </li>
+                          <li class="col-md-2 col-6">
+                            <p class="title2 mb-0">Modified On</p>
+                            <p class="data">{{work.modifiedOn}}</p>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rowBGColor">
+                <div class="px-2 pt-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <h6 class="headingInDivs">Address Details</h6>
+                    </div>
+                    <!-- dropdown ends here -->
+                  </div>
+                
+            
+
+                       <div class="col-md-12 mb-1 bgLight rounded">
+                        <div class="row">
+                          <div class="col-10" *ngFor="let location_item of locationList">
+                          
+                             
+                            <div class="col-8" style="line-height: 0;">
+                              <b class="title2 mb-0">{{location_item.locationTitle}}</b>
+                              <p class="data">                            <span class="data">{{location_item.location}}</span>                            
+                                <a target="_blank" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination={{ location_item.locatioCodes}}"><mat-icon class="material-symbols-outlined" style="cursor: pointer; margin-left: 10px;">location_on</mat-icon>
+                                </a></p><br>
+                            </div>
+
+
+                              <!-- <mat-icon class="material-symbols-outlined" style="cursor: pointer;">location_on</mat-icon> -->
+                          </div>
+
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -18,7 +18,64 @@ export interface location{
     location:string,
     radius:string,
     locatioCodes:string,
+    locationTitle:string,
     id:number
+}
+
+export interface personal {
+    id:number,
+    photo:string,
+    name:string,
+    phone: string,
+    email:string,
+    intro:string
+    dob:string,
+    gender:string,
+    address:string, 
+    city:string,
+    postal_code:string,
+    state:string,
+    status:string,
+    country:string,
+    createdOn:string,
+    modifiedOn:string
+}
+
+export interface business{
+    id:number,
+    photo:string,
+    name:string,
+    phone: string,
+    email:string,
+    intro:string
+    landline:string,
+    website:string,
+    dob:string,
+    gender:string,
+    address:string, 
+    city:string,
+    postal_code:string,
+    state:string,
+    status:string,
+    country:string,
+    industry:string,
+    size:string,
+    createdOn:string,
+    modifiedOn:string
+}
+
+export interface WorkFlowInterface {
+    id: number,
+    title: string,
+    description: string,
+    state: string,
+    userType: string,
+    flowNature: string,
+    approver: string,
+    feeType: string,
+    feeAmount: number,
+    autoApprove: boolean,
+    createdOn: string
 }
 
 export interface work_app{
@@ -35,4 +92,11 @@ export interface work_app{
     generatorPic:string,
     isGeneratorBusiness:string,
     id:number
+}
+export interface request{
+    id:number,
+    name:string,
+    picture:string,
+    description:string,
+    amount:string,
 }

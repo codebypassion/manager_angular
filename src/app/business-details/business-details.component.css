@@ -1,0 +1,16 @@
+.card_img2{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0;
+}
+
+.display{
+    display: flex;
+}
+
+.margin_set{
+    margin: 0px 0px 36px 400px !important;
+}

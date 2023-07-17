@@ -1,5 +1,5 @@
 <div class="workingDivOuter width95Per">
-  <div class="row project-cards workingDiv">
+  <div class="project-cards workingDiv">
     <div class="col-md-12 project-list"></div>
     <div class="col-sm-12">
       <div class="card mb-0 cardNoBorder">
@@ -15,30 +15,10 @@
               role="tabpanel"
               aria-labelledby="top-tasks-tab"
             >
-            <ng-container *ngIf="filterWorkList.length === 0; else hasData">
-              <!-- No Data page starts-->
-              <div
-                class="tab-pane fade"
-                id="noDataCat"
-                role="tabpanel"
-                aria-labelledby="noData"
-              >
-                <div class="error-wrapper mb-4">
-                  <div class="container">
-                    <div class="svg-wrraper">
-                      <img class="svgImg" src="../assets/images/undraw/noData.svg" alt="no data">
-                    </div>
-                    <div class="col-md-8 offset-md-2">
-                      <h2>Nothing to show.</h2>
-                      <p class="sub-content">Currently there is no Category present.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ng-container>
-            <ng-template #hasData>
+            
 
-              <div class="row mb-3 p-0 d-flex justify-content-between">
+
+              <div class="row mb-3 p-0 d-flex">
                 <div
                   class="left-header col-md-6 horizontal-wrapper ps-0 d-flex align-items-center"
                 >
@@ -61,55 +41,8 @@
                 </div>
 
                 <div
-                  class="col-auto d-flex align-items-center justify-content-between px-0"
+                  class="col-auto d-flex align-items-center px-2 "
                 >
-                  <ul
-                    class="nav-menus cstmNavMenusWidth d-flex align-items-center"
-                  >
-                    <li class="onhover-dropdown p-0 me-0">
-                      <div class="d-flex profile-media">
-                        <div class="d-flex statusFilter justify-content-around">
-                          <span class="status">Adm. Status</span>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </div>
-                      </div>
-
-                      <ul
-                        class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div"
-                        id="top-tab"
-                        role="tablist"
-                      >
-                      <li class="nav-item newNavItem">
-                        <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('all')">All</a>
-                      </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Started')">Started</a>
-                        </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Submitted')"
-                            >Submitted</a
-                          >
-                        </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Approval')"
-                            >Approval Pending</a
-                          >
-                        </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Rejected')">Rejected</a>
-                        </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Redraft')">Redraft</a>
-                        </li>
-                        <li class="nav-item newNavItem">
-                          <a class="nav-link removePadd newNavLink" (click)="filterByAdminState('Approved')">Approved</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-
                   <ul
                     class="nav-menus cstmNavMenusWidth d-flex align-items-center"
                   >
@@ -156,18 +89,22 @@
                   <table class="table fold-table">
                     <thead>
                       <tr class="bdrBtmBlue">
-                        <th class="cstmTh" scope="col">Generator</th>
-                        <th class="cstmTh" scope="col">Account Type</th>
-                        <th class="cstmTh" scope="col">WorkRef-ID</th>
-                        <th class="cstmTh" scope="col">Admin Status</th>
-                        <th class="cstmTh" scope="col">Status</th>
-                        <th class="cstmTh" scope="col">Work Details</th>
-                        <th class="cstmTh" scope="col">Location</th>
-                        <th class="cstmTh" scope="col">Work Category</th>
+                        <th class="cstmTh font_Deg" scope="col">Generator</th>
+                        <th class="cstmTh font_Deg" scope="col">Generator Type</th>
+                        <th class="cstmTh font_Deg" scope="col">Reference ID</th>
+                        <th class="cstmTh font_Deg" scope="col">Work Details</th>
+                        <th class="cstmTh font_Deg" scope="col">Location</th>
+                        <th class="cstmTh font_Deg" scope="col">Status</th>
+                        <th class="cstmTh font_Deg" scope="col">Remuneration</th>
+                        <th class="cstmTh font_Deg" scope="col">Work Category</th>
+                        <th class="cstmTh font_Deg" scope="col">Apply Date</th>
+                        <th class="cstmTh font_Deg" scope="col">End Date</th>
                         <!-- <th class="cstmTh" scope="col"></th> -->
                       </tr>
                     </thead>
                     <tbody>
+                      <ng-container *ngIf="filterWorkList; else elseBlock">
+
                       <tr class="view bgroud mb-1" *ngFor="let work_item of filterWorkList">
                         <td class="cstmTd">
                           <a href="../others/business.html">
@@ -183,7 +120,7 @@
                                 class="div2 d-flex flex-column align-items-start"
                               >
                                 <p class="mb-0 headTitle">{{work_item.generatorName}}</p>
-                                <p class="mb-0">2 mins ago</p>
+                                <p class="mb-0 gene_time">2 mins ago</p>
                                 <!-- <p class="bsnisBadge border rounded px-1 mb-0">Business
                                 </p> -->
                               </div>
@@ -192,7 +129,7 @@
                         </td>
                         <td class="cstmTd">
                           <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
+                            <p class="border px-2 rounded_deg mb-1 font11px">
                               {{work_item.isGeneratorBusiness}}
                             </p>
                           </div>
@@ -203,71 +140,82 @@
                             >{{work_item.workRefId}}</a
                           >
                         </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p [ngClass]="{'border': true, 'rounded': true, 'px-1': true, 'mb-0': true, 'started':work_item.workStatus === 'Started','Submitted':work_item.workStatus === 'Submitted' , 'bgAppPending':work_item.workStatus === 'Approval','bgRejected':work_item.workStatus === 'Rejected','bgRedraft':work_item.workStatus === 'Redraft' , 'bgApproved':work_item.workStatus === 'Approved' }">
-                              {{work_item.workStatus}}
-                            </p>
-                            <!-- <p class="border rounded px-1 mb-0 activeCol">
-                              {{work_item.workStatus}}
-                            </p> -->
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <!-- <p class="border rounded px-1 mb-0 activeCol"> -->
-                            <p [ngClass]="{'border': true, 'rounded': true, 'px-1': true, 'mb-0': true, 'activeCol':work_item.status === 'Applied','bgExecuting':work_item.status === 'Executing' , 'bgExecuted':work_item.status === 'Executed'}">
-                              {{work_item.status}}
-                            </p>
-                          </div>
-                        </td>
                         <td class="cstmTd minWidth300">
                           <div
-                            class="d-flex flex-column align-items-start position-relative"
+                          class="d-flex flex-column align-items-start position-relative"
                           >
-                            <p class="mb-0 headTitle">{{work_item.title}}</p>
-
-                            <p class="catDesc mx-0 px-0">
+                          <p class="mb-0 headTitle">{{work_item.title}}</p>
+                          
+                          <p class="catDesc mx-0 px-0">
                             {{work_item.description}}
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
+                            
+                          </p>
+                          <p class="tooltip newTooltipPosition">
+                            Earn upto Rs 500 everyday si the new beginning and
+                            that why you are the best Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Maxime placeat
+                            repudiandae iusto ipsa eligendi provident deleniti
+                            aspernatur quaerat suscipit deserunt tenetur enim,
+                            earum sunt, voluptatibus non dignissimos
+                            repellendus minima adipisci.
+                          </p>
+                          <div class="d-flex">
+                            <p class="border px-2  mb-1 chip_deg">
+                              Pink Wallet
                             </p>
                           </div>
-                        </td>
-                        <td class="cstmTd">
-                          <p class="data">{{work_item.location}}</p>
-                        </td>
-                        <td class="cstmTd">
-                          <a href="./category_d.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
+                        </div>
+                      </td>
+                      <td class="cstmTd">
+                        <p class="data location_deg">{{work_item.location}}</p>
+                      </td>
+                      <td class="cstmTd">
+                        <div class="d-flex">
+                          <!-- <p class="border rounded px-1 mb-0 activeCol"> -->
+                          <p class="rounded_deg" [ngClass]="{'px-2': true, 'mb-1': true, 'activeCol':work_item.status === 'Applied','bgExecuting':work_item.status === 'Executing' , 'bgExecuted':work_item.status === 'Executed'}">
+                            {{work_item.status}}
+                          </p>
+                        </div>
+                      </td>
+                      <td class="cstmTd">
+                        <p class="data reu_deg">₹100</p>
+                      </td>
+                      <td class="cstmTd">
+                        <a href="./category_d.html">
+                          <div class="grouping d-flex justify-content-evenly">
+                            <div class="div1">
+                              <img
                                   class="genImg me-2 rounded"
                                   src="{{work_item.generatorPic}}"
                                   alt=""
                                 />
                               </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">{{work_item.workCategoryTitle}}</p>
+                              <div class="div2 d-flex flex-column align-items-start">
+                                <p class="mb-0">{{work_item.workCategoryTitle}}</p>
                               </div>
                             </div>
                           </a>
                         </td>
-                      </tr>                     
+                        
+                      <td class="cstmTd">
+                        <p>12-07-2023</p>
+                      </td>
+                      
+                      <td class="cstmTd">
+                        <p>15-07-2023</p>
+                      </td>
+                      </tr>               
+                    </ng-container>
+                    <ng-template #elseBlock>
+                      <!-- Render alternative content when condition is false -->
+                      <tr>
+                        <td colspan="4">No data available</td>
+                      </tr>
+                    </ng-template>      
                     </tbody>
                   </table>
                 </div>
               </div>
-            </ng-template>
 
             </div>
           </div>
@@ -310,6 +258,7 @@
                   </div>
                 </div>
               </div>
+
               <button
                 class="btn-close"
                 type="button"

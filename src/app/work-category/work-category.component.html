@@ -1,0 +1,141 @@
+<!-- Container-fluid starts-->
+<div class=" marginTopBottom40 overfloHide">
+    <div class="ro project-cards">
+      <div class="col-md-12 project-list">
+      </div>
+      <div class="col-sm-12 px-0">
+        <div class="card noShad cardNoBorder mb-0">
+          <div class="card-body px-0">
+            <div class="tab-content" id="top-tabContent">
+              <!-- taskCategory Lists starts-->
+  
+              <div class="row">
+                <div class="col-md-4 borderRight ps-4 ">
+  
+                  <div class="d-flex align-items-center justify-content-between mb-3 padding10px">
+                    <span class="pageHeading mb-0">
+                      Users
+                    </span>
+                    <!-- <span class="material-symbols-outlined removePadd mx-2" (click)="wlToCreate()">
+                      add
+                    </span> -->
+                  </div>
+  
+                  <div class="tab-pane fade show active " id="workLists" [hidden]="taskCategory1">
+                    <div class="d-flex mb-4 p-2 justify-content-between busi_style">
+                      <div class="col-md-8 formControl searchBar p-0 d-flex align-items-center">
+                        <input type="text" [(ngModel)]="searchTerm" (input)="filterBySearchTerm()" class="searchBarInput"
+                          placeholder="Search Here...">
+                          <div class="search_div"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                          </div>
+                      </div>
+  
+                      <!-- Filter starts -->
+                      <ul class="col-md-2 p-0 d-flex align-items-center nav-menus cstmNavMenusWidth">
+                        <li class=" onhover-dropdown p-0 me-0">
+                          <div class="d-flex profile-media">
+                            <div class="d-flex statusFilter justify-content-around">
+                              <span class="status">Filter</span>
+                              <p class="mb-0 font-roboto"> <i class="middle fa fa-angle-down"></i></p>
+                            </div>
+                          </div>
+                          <ul class="nav nav-tabs cstmDraft border-tab dirColumn profile-dropdown onhover-show-div"
+                            id="top-tab" role="tablist">
+  
+                            <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink" id="profile-top-tab"
+                                (click)="filterByState('all')">All</a>
+                            </li>
+  
+                            <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink" id="profile-top-tab"
+                                data-bs-toggle="tab" (click)="filterByState('Active')">Active</a>
+                            </li>
+  
+                            <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink"
+                                id="contact-top-tab2" data-bs-toggle="tab" (click)="filterByState('Pending')">Pending</a>
+                            </li>
+  
+                            <li class="nav-item newNavItem"><a class="nav-link removePadd newNavLink"
+                                id="contact-top-tab3" data-bs-toggle="tab"
+                                (click)="filterByState('Suspended')">Suspended</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-12 makeIt6 enableScroll busi_style" id="makeIt6">
+                        <div *ngIf="filteredWorkCategory.length > 0; else noDataMessage">
+                          <div class="row">
+                            <div class="col-md-12 box-col-33 cstmCol" *ngFor="let work of filteredWorkCategory">
+                              <a (click)="openWorkDetailsPage(work.id)" class="anc">
+                                <div class="project-box d-flex align-items-center justify-content-between">
+                                  <div class="cstmNewDivInnerCard">
+  
+                                    <img class="cardImg cardImgCar catBanner rounded-circle" [src]="work.photo" alt="">
+                                    <div class="d-flex flex-column">
+                                      <h6 class="cstmH6 catTitle mb-0">{{work.name}}
+                                      </h6>
+                                      <p class="catDesc cstmTable">{{work.intro}}</p>
+                                      <p class="tooltip1">{{work.intro}}</p>
+                                    </div>
+  
+                                  </div>
+                                </div>
+                              </a>
+                              <div class="d-flex makeAbso">
+  
+                                <p
+                                  [ngClass]="{'pmargin': true, 'cmnBadgeDesign': true, 'activeCol': work.status === 'Active',  'bgpending': work.status === 'Pending',  'bgSuspended': work.status === 'Suspended'}">
+                                  {{work.status}}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- taskCategory Lists ends-->
+  
+                  <!--category edit tab pane starts -->
+                  <div class="tab-pane fade active show" id="topTaskCategoryEdit" [hidden]="taskCategory2">
+                    <div class="row mb-3">
+                      <div class="col-1">
+                        <span (click)="backToWLists()" class="material-symbols-outlined backBtn m-0">
+                          arrow_back
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="col-md-8 borderLeft fixHeightScroll">
+                  <router-outlet></router-outlet>
+                </div>
+              </div>
+  
+
+              <!-- No Data page starts-->
+              <ng-template #noDataMessage>
+                <div class="tab-pane fade show active" id="noDataCat" role="tabpanel" aria-labelledby="noData">
+                  <div class="error-wrapper mb-4">
+                    <div class="container">
+                      <div class="svg-wrraper">
+                        <img class="svgImg" src="../assets/images/undraw/noData.svg" alt="no data">
+                      </div>
+                      <div class="col-md-8 offset-md-2">
+                        <h3>Nothing to show.</h3>
+                        <p class="sub-content">Currently there is no Category present.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

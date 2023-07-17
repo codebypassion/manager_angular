@@ -257,7 +257,7 @@ i {
 }
 
 .project-box h6 {
-    font-weight: 500;
+    font-weight: 500 !important;
     width: 250px;
     /* border: 1px solid red; */
     padding: 0px 10px;
@@ -462,7 +462,7 @@ i {
 }
 
 .pmargin {
-    margin: 0 !important;
+    margin: 0px 0px 25px 0px !important;
 }
 
 .pmargin1 {
@@ -475,66 +475,55 @@ i {
 
 }
 
-.Approval_Pending {
+.bgapp_pen {
     background: #fdf4f6 !important;
     color: red !important;
 }
 
-.draftCol {
-    color: #ffae00 !important;
-    background-color: #fff7e6 !important;
+.bgredraft {
+    color: #E65100 !important;
+    background-color: #ffe9b9 !important;
 }
 
 .activeCol {
-    color: #4bbc93 !important;
-    background-color: #ebf9f4 !important;
+    color: #388E3C !important;
+    background-color: #c4ffc7 !important;
 }
 
 .bdApplied{
     color: white;
     background-color: #ADE792;
 }
+.bgSuspended{
+    color: red  !important;
+    background-color: rgb(255, 197, 197) !important;
+}
+.bgpending{
+    color: #016bb6 !important;
+    background-color: #9ecbff !important;
+}
 
 .bgExecuting{
-    color: white;
-    background-color: #99dbf5;
+    color: #B71C1C;
+    background-color: #f48fb18c;
 }
 
 .bgExecuted{
-    color: white;
-    background-color: #1F6E8C;
+    color: #FF8F00;
+    background-color: #fdebb4;
 }
 
-.started{
-    color: white;
-    background-color: #FAF0E4;
+.bgstarted{
+    color: #827717;
+    background-color: #f5ff9c;
 }
-.Approval{
-    color: white;
-    background-color: #000000;
+.bgrejected{
+    color: #006064;
+    background-color: #80DEEA;
 }
-.Submitted {
-    background: white !important;
-    color: red !important;
-}
-
-.bgAppPending {
-    color: white !important;
-    background-color: #ff8551 !important;
-}
-
-.bgRejected{
-    color: white !important;
-    background-color: #CD1818 !important;
-}
-
-.bgRedraft{
-    color: white;
-    background-color: #C4DFDF;
-}
-.bgApproved{
-    color: white;
-    background-color: #ECA3F5;
+.bgapproved{
+    color: #B71C1C;
+    background-color: #f48fb18c;
 }
 .pending>select {
     color: red !important;
@@ -596,14 +585,18 @@ i {
 .btnMargin {
     padding: 7px 14px !important;
 }
+.icon_set{
+    margin-left: 40%;
+}
 
 .rowBGColor {
-    background-color: #f9f9f9;
-    padding: 15px;
+    /* background-color: #f9f9f9; */
+    /* padding: 15px; */
     border-radius: 10px;
     margin-bottom: 2rem;
-    border: 1.5px solid #eeeeee;
+    /* border: 1.5px solid #eeeeee; */
 }
+
 
 #AddFlowBtn {
     width: fit-content;
@@ -1125,7 +1118,7 @@ input[type="checkbox"] {
 }
 
 .headTitle {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .numbering {
@@ -1439,6 +1432,7 @@ input[type="checkbox"] {
 
 .cstmTh {
     padding: 10px !important;
+    font-size: 14px;
 }
 
 .cstmTd {
@@ -1454,7 +1448,7 @@ input[type="checkbox"] {
 
 
 .cstmTd a {
-    color: grey;
+    color: black;
     pointer-events: auto;
 }
 
@@ -1554,9 +1548,9 @@ input[type="checkbox"] {
 
 .font11px {
     font-size: 11px !important;
-    padding: 0px 5px;
-    background-color: #a7bbff !important;
-    color: #4f4f4f !important;
+    padding: 1px 5px;
+    background-color: #d7e9f7 !important;
+    color: #1565c0 !important;
 }
 
 .minWidth300 {
@@ -1646,9 +1640,71 @@ input[type="checkbox"] {
 .tableFixed {
     min-height: 75vh;
     max-height: 72vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .ui-sortable {
     min-height: 78vh;
+}
+
+.createInputBtn {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 12px;
+    transition: 0.2s ease-in-out;
+    color: #ffffff;
+    border: 1px solid #3e5fce4a;
+    background-color: #3e5fced1;
+}
+
+.createInputBtn:hover {
+    border: 1px solid #3e60ce;
+    background-color: #3e60cee8;
+}
+
+.crsrPointer {
+    cursor: pointer;
+}
+
+.newHrMarg {
+    margin: 20px 0px;
+}
+
+.form-control {
+    border-radius: 4px !important;
+}
+
+.editBtnAbsol {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.max-width-65 {
+    max-width: 65% !important;
+}
+
+.rounded10 {
+    border-radius: 10px !important;
+}
+
+.anchCardWF {
+    width: 100%;
+}
+
+
+
+.headingInDivs {
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    padding-bottom: 15px;
+}
+
+.formControl {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
 }

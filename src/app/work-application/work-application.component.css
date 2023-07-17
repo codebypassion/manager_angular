@@ -1,0 +1,9 @@
+
+.font_Deg{
+    font-size: 12px !important;
+    color: gray;
+}
+
+.scroll_none{
+    overflow-x: none !important;
+}

@@ -1,5 +1,7 @@
-<div class="spinner-border text-info spinner_Set" role="status" *ngIf="loader">
-  <span class="visually-hidden">Loading...</span>
+
+
+<div class="loader-wrapper" *ngIf="loader">
+  <div class="loader"></div>
 </div>
 <mat-toolbar class="example-toolbar mat-toolbar" *ngIf="!loader">
   <mat-toolbar-row class="mat-toolbar-row">
@@ -41,20 +43,16 @@
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav-container class="minHeight100vh bgcolor">
+<mat-sidenav-container class="minHeight100vh bgcolor" >
   <mat-sidenav class="nav_deg" style="background-color: #f5f5f5;" #snav [opened]="!isSmallScreen" mode="side" fixedTopGap="56">
     <mat-nav-list *ngIf="!loader">
       <a
         mat-list-item
         routerLink="/works"
         routerLinkActive="active2"
-        class="sidebarListHeight50"
-    
+        class="sidebarListHeight50"          
       >
-
-      <mat-icon class="material-symbols-outlined">jump_to_element</mat-icon>
-
-
+            <mat-icon class="material-symbols-outlined">jump_to_element</mat-icon>
       </a>
       
       
@@ -64,13 +62,9 @@
         routerLinkActive="active2"
         class="sidebarListHeight50"
       >
-        <!-- <span class="me-2 material-symbols-outlined faIconColor"
-          >rule</span
-        > -->
         <span class="material-symbols-outlined">
           strategy
           </span>
-        <!-- <span class="font14px">Applications</span> -->
       </a>
       <a
         mat-list-item
@@ -78,47 +72,43 @@
         routerLinkActive="active2"
         class="sidebarListHeight50"
       >
-        <!-- <span class="me-2 material-symbols-outlined faIconColor">work_history</span> -->
         <span class="material-symbols-outlined">
           nature_people
           </span>
-        <!-- <span class="font14px">Ongoing</span> -->
       </a>
       <a
-        mat-list-item
-        routerLink="/complaints"
-        routerLinkActive="active2"
-        class="sidebarListHeight50"
-      >
-        <!-- <span class="me-2 material-symbols-outlined faIconColor">support_agent</span> -->
-        <span class="material-symbols-outlined">
-          rotate_90_degrees_ccw
-          </span>
-        <!-- <span class="font14px">Complaints</span> -->
-      </a>
-      <a
-        mat-list-item
-        routerLink="/individuals"
-        routerLinkActive="active2"
-        class="sidebarListHeight50"
-      >
-        <!-- <span class="me-2 material-symbols-outlined faIconColor">support_agent</span> -->
-        <span class="material-symbols-outlined">
-          person
-          </span>
-        <!-- <span class="font14px">Complaints</span> -->
-      </a><a
       mat-list-item
-      routerLink="/business"
+      routerLink="/work-category"
       routerLinkActive="active2"
       class="sidebarListHeight50"
-    >
+      >
       <!-- <span class="me-2 material-symbols-outlined faIconColor">support_agent</span> -->
       <span class="material-symbols-outlined">
-        domain
-        </span>
+        person
+      </span>
       <!-- <span class="font14px">Complaints</span> -->
-    </a>
+    </a><a
+    mat-list-item
+    routerLink="/business"
+    routerLinkActive="active2"
+    class="sidebarListHeight50"
+    >
+    <span class="material-symbols-outlined">
+      domain
+    </span>
+  </a>
+  <a
+    mat-list-item
+    routerLink="/request"
+    routerLinkActive="active2"
+    class="sidebarListHeight50"
+    >
+    <!-- <span class="me-2 material-symbols-outlined faIconColor">support_agent</span> -->
+    <span class="material-symbols-outlined">
+      payments
+      </span>
+    <!-- <span class="font14px">Complaints</span> -->
+  </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content  *ngIf="!loader" class="leftMargin0 overflowVisible mainworkingdiv">

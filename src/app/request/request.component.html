@@ -1,0 +1,189 @@
+<!-- Container-fluid starts-->
+<div class="marginTopBottom40 overfloHide">
+  <div class="ro project-cards">
+    <div class="col-md-12 project-list"></div>
+    <div class="col-sm-12 px-0">
+      <div class="card noShad cardNoBorder mb-0">
+        <div class="card-body px-0">
+          <div class="tab-content" id="top-tabContent">
+            <!-- taskCategory Lists starts-->
+
+            <div class="row">
+              <div class="col-md-4 borderRight ps-4">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-3 padding10px"
+                >
+                  <span class="pageHeading mb-0"> Withdrawal Requests </span>
+                  <!-- <span class="material-symbols-outlined removePadd mx-2" (click)="wlToCreate()">
+                      add
+                    </span> -->
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="workLists"
+                  [hidden]="taskCategory1"
+                >
+                  <div
+                    class="d-flex mb-4 p-2 justify-content-between busi_style"
+                  >
+                    <div
+                      class="col-md-8 formControl searchBar p-0 d-flex align-items-center"
+                    >
+                      <input
+                        type="text"
+                        [(ngModel)]="searchTerm"
+                        (input)="filterBySearchTerm()"
+                        class="searchBarInput"
+                        placeholder="Search Here..."
+                      />
+                      <div class="search_div">
+                        <mat-icon
+                          aria-hidden="false"
+                          aria-label="Example home icon"
+                          fontIcon="search"
+                        ></mat-icon>
+                      </div>
+                    </div>
+
+                    <!-- Filter starts -->
+                    <ul
+                      class="col-md-2 p-0 d-flex align-items-center nav-menus cstmNavMenusWidth"
+                    >
+                      <li class="onhover-dropdown p-0 me-0">
+                        <div class="d-flex profile-media">
+                          <div
+                            class="d-flex statusFilter justify-content-around"
+                          >
+                          <label for="" style="margin-bottom: 0px;">Select All</label>
+                          <input type="checkbox">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <div
+                      class="col-md-12 makeIt6 enableScroll busi_style"
+                      id="makeIt6"
+                    >
+                      <div
+                        *ngIf="
+                          filteredWorkCategory.length > 0;
+                          else noDataMessage
+                        "
+                      >
+                        <div class="row">
+                          <div
+                            class="col-md-12 box-col-33 cstmCol"
+                            *ngFor="let work of filteredWorkCategory"
+                          >
+                            <a
+                              (click)="openWorkDetailsPage(work.id)"
+                              class="anc"
+                            >
+                              <div
+                                class="project-box d-flex align-items-center justify-content-betwee"
+                              >
+                                <div class="cstmNewDivInnerCard">
+                                  <img
+                                    class="cardImg cardImgCar catBanner rounded-circle"
+                                    [src]="work.picture"
+                                    alt=""
+                                  />
+                                  <div class="d-flex flex-column">
+                                    <h6 class="cstmH6 catTitle mb-0">
+                                      {{ work.name }}
+                                    </h6>
+                                    <p class="catDesc cstmTable">
+                                      {{ work.description }}
+                                    </p>
+                                    <p class="tooltip1">
+                                      {{ work.description }}
+                                    </p>
+                                  </div>
+                                  <div class="amount">
+                                    ₹{{work.amount}} <br /><input
+                                      type="checkbox"
+                                      style="margin-top: 5px; margin-left: 15px"
+                                      id="vehicle1"
+                                      name="vehicle1"
+                                      value="Bike"
+                                      class="margin_checkbox"
+                                    />
+                                  </div>
+                                  <!-- <p style="margin-top: 15px;"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="margin_checkbox">
+                                    </p> -->
+                                </div>
+                              </div>
+                            </a>
+                            <!-- <div class="d-flex makeAbso">
+  
+                                <p>
+                                </p>
+                              </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- taskCategory Lists ends-->
+
+                <!--category edit tab pane starts -->
+                <div
+                  class="tab-pane fade active show"
+                  id="topTaskCategoryEdit"
+                  [hidden]="taskCategory2"
+                >
+                  <div class="row mb-3">
+                    <div class="col-1">
+                      <span
+                        (click)="backToWLists()"
+                        class="material-symbols-outlined backBtn m-0"
+                      >
+                        arrow_back
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 borderLeft fixHeightScroll">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+
+            <!-- No Data page starts-->
+            <ng-template #noDataMessage>
+              <div
+                class="tab-pane fade show active"
+                id="noDataCat"
+                role="tabpanel"
+                aria-labelledby="noData"
+              >
+                <div class="error-wrapper mb-4">
+                  <div class="container">
+                    <div class="svg-wrraper">
+                      <img
+                        class="svgImg"
+                        src="../assets/images/undraw/noData.svg"
+                        alt="no data"
+                      />
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                      <h3>Nothing to show.</h3>
+                      <p class="sub-content">
+                        Currently there is no Category present.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

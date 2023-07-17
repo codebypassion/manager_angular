@@ -1,0 +1,94 @@
+<!-- Container-fluid starts-->
+<div class="container width95Per">
+    <div class="row project-cards">
+      <div class="col-md-12 project-list"></div>
+      <div class="col-sm-12 px-0">
+        <div class="card mb-0 cardNoBorder">
+          <div class="card-body px-0">
+            <div class="tab-content" id="top-tabContent">
+              <!-- back button -->
+              <div
+                class="borderBottomNeeded row align-items-center justify-content-between mb-4 right-header cstmFlex"
+              >
+                <div class="col-md-4 p-0 d-flex align-items-center">
+                  <span class="bckBtnTitle">{{ work.name }}</span>
+                   
+                </div>
+                
+  
+                
+              </div>
+              <!-- Cateogry Detail -->
+  
+              <div
+                class="tab-pane fade show active width97MarginAuto"
+                id="categoryDetailPg"
+                role="tabpanel"
+                aria-labelledby="categoryDetailPg"
+              >
+                <div class="rowBGColor">
+                  <div class="px-2 pt-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <!-- dropdown ends here -->
+                    </div>
+                    <div class="">
+                        <div class="post-header justify-content-start display">
+                          <div class="d-flex">
+                            <img
+                              class="img-thumbnail me-3 card_img2 cardImg cardImgCar catBanner rounded-circle"
+                              src="{{ work.picture }}"
+                              alt="Generic placeholder image"
+                            />
+                            <div class="flex-grow-1 align-self-center">
+                              <p class="title2 mb-0">{{ work.name }}</p>
+                              <!-- <p class="data mb-0">{{ work.phone }}<img src="../assets/phone_icon.png" alt="" class="logo_style"></p> -->
+                              <!-- <p class="data mb-0">{{ work.email }}<img src="../assets/mail.png" class="logo_style"></p> -->
+                            </div>
+                          </div>
+                          <div
+                          class="col-auto px-0 d-flex align-items-center justify-content-en"
+                        >
+                          <p class="mb-0 me-2 bdrGrey rounded pendig padding2px margin_set">
+                         
+                                <a href="#" class="accept">Approve</a>
+                              </p>
+                        </div>
+                        </div>
+    
+                        <div class="des_p">
+                          <p>{{ work.description }}</p>
+                         
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+  
+                <div class="rowBGColor">
+                  <div class="px-2 pt-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <h6 class="headingInDiv">Amount</h6>
+                        <p style="color: #04d375;">₹{{work.amount}}
+                        </p>
+                      </div>
+                      <!-- dropdown ends here -->
+                    </div>
+  
+                    <div class="col-md-12 mb-1 bgLight rounded">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

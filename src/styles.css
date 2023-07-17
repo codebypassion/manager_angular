@@ -6,6 +6,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 a {
     text-decoration: none;
 }
+.scroll_none{
+    overflow-x: hidden;
+}
 .card-body {
     background-color: white !important;
 }
@@ -30,4 +33,129 @@ a.active2 {
     width: 100%;
     padding: 0px 15px;
     margin: auto;
+}
+
+a.active {
+    background-color: #dddddd;
+}
+
+.searchBar {
+    background-color: #f9f9f9;
+    ;
+}
+
+.searchBarInput {
+    border: none;
+    padding: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-size: 12px;
+    color: grey;
+}
+
+.tab-pane,
+.tab-content {
+    background-color: white;
+}
+
+.marginTopBottom40 {
+    margin: 0px auto;
+}
+
+.pageHeading {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.fixHeightScroll {
+    height: 91vh;
+    overflow: auto;
+    /* border: 1px solid red; */
+}
+
+.borderLeft {
+    border-left: 1px solid #e8e8e8;
+}
+
+.borderRight {
+    border-right: 1px solid #e8e8e8;
+}
+
+.overfloHide {
+    overflow: hidden;
+}
+
+.borderBottomNeeded {
+    border-bottom: 1.9px solid #e8e8e8;
+    padding: 15px 10px;
+}
+
+.padding10px {
+    padding: 15px;
+}
+
+.enableScroll {
+    height: 70vh;
+    overflow: auto;
+}
+
+.enableScroll::-webkit-scrollbar-thumb {
+    /* background-color: #f8a938; */
+    background-color: transparent;
+}
+
+.enableScroll::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+}
+
+.padding2px {
+    padding: 2px;
+}
+.minWidth170px {
+    min-width: 170px;
+}
+
+.width97MarginAuto {
+    width: 97%;
+    margin: auto;
+}
+
+.gene_time{
+    font-size: 10px !important;
+    color: gray;
+}
+
+.reu_deg{
+    color: #04d375 !important;
+    font-size: 12px !important;
+}
+.workRefId{
+    cursor: pointer;
+    font-size: 9px !important;
+}
+
+
+.rounded_deg{
+    border-radius: 4px;
+    border: none !important;
+    padding: 1px 5px;
+    width: 75px;
+    /* height: 20px; */
+    text-align: center;
+}
+.busi_style{
+    padding: 0px 20px 0px 20px;
+}
+.search_div{
+    padding: 3px 3px 0px 0px;
+}
+             
+.status_div{
+    margin-left: 0px !important;
+}
+.logo_style{
+    height: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px
 }

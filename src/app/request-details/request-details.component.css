@@ -1,0 +1,29 @@
+.card_img2{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0;
+}
+
+.display{
+    display: flex;
+}
+
+.margin_set{
+    margin: 0px 0px 35px 550px !important;
+}
+.headingInDiv{
+    font-size: 1rem !important;
+    font-weight: 500;
+}
+.margin_checkbox{
+    margin: 0 0 0 17px;
+}
+.accept{
+    padding: 10px 15px;
+    color: white;
+    background-color: #6FE76E;
+    box-shadow: 0 4px 0 0 #7ED37E
+}

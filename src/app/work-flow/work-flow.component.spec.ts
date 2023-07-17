@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BusinessComponent } from './business.component';
+import { WorkFlowComponent } from './work-flow.component';
 
-describe('BusinessComponent', () => {
-  let component: BusinessComponent;
-  let fixture: ComponentFixture<BusinessComponent>;
+describe('WorkFlowComponent', () => {
+  let component: WorkFlowComponent;
+  let fixture: ComponentFixture<WorkFlowComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BusinessComponent]
+      declarations: [WorkFlowComponent]
     });
-    fixture = TestBed.createComponent(BusinessComponent);
+    fixture = TestBed.createComponent(WorkFlowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

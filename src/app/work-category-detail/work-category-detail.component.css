@@ -1,0 +1,12 @@
+.img_deg{
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+}
+.display{
+    display: flex;
+}
+
+.margin_set{
+    margin: 0px 0px 36px 400px !important;
+}

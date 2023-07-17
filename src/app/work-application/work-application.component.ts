@@ -39,21 +39,21 @@ filterByAdminState(state: string): void {
   }
 }
 
-filterBygeneratorState(state: string): void {
-  if (state === 'all') {
-    this.filterWorkList = this.workAppList;
-  } else {
-    this.filterWorkList = this.workAppList.filter(workItem => workItem.generatorStatus === state);
-  }
-}
+// filterBygeneratorState(state: string): void {
+//   if (state === 'all') {
+//     this.filterWorkList = this.workAppList;
+//   } else {
+//     this.filterWorkList = this.workAppList.filter(workItem => workItem.generatorStatus === state);
+//   }
+// }
 
-filterByFinalState(state: string): void {
-  if (state === 'all') {
-    this.filterWorkList = this.workAppList;
-  } else {
-    this.filterWorkList = this.workAppList.filter(workItem => workItem.final_status === state);
-  }
-}
+// filterByFinalState(state: string): void {
+//   if (state === 'all') {
+//     this.filterWorkList = this.workAppList;
+//   } else {
+//     this.filterWorkList = this.workAppList.filter(workItem => workItem.final_status === state);
+//   }
+// }
 
 
 filterBySearchTerm() {

@@ -6,13 +6,12 @@
       "description": "Earn upto Rs 500 everyday si the new beginni",
       "workCategoryTitle": "Biker Onboarding",
       "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
-      "workCategoryBanner": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=80",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
       "location": "Noida",
       "isGeneratorBusiness": "Business",
       "generatorName": "Swiggy",
       "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
-      "workStatus": "Submitted",
-      "status": "Approval",
+      "status": "Executed",
       "id": 1
     },
     {
@@ -26,32 +25,101 @@
       "isGeneratorBusiness": "Business",
       "generatorName": "Swiggy",
       "generatorPic": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=80",
-      "workStatus": "Started",
       "status": "Applied",
       "id": 2
-    }
-  ],
-  "location": [
-    {
-      "location":"Noida, sector-62, Sector-63, B-154",
-      "locatioCodes":"32.0098636,77.3117298",
-      "id": 1
     },
     {
-      "location":"Agra, Kamla nagar, Sector-68, L-78",
-      "locatioCodes":"32.0098636,77.3117298",
-      "id": 2
+      "workRefId": "WORKID5463321D4",
+      "title": "Need Bikers",
+      "description": "Earn upto Rs 500 everyday si the new beginni",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Noida",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "status": "Executing",
+      "id": 3
+    },
+    {
+      "workRefId": "WORKID5463321D5",
+      "title": "Need teacher",
+      "description": "Earn upto Rs 1000 everyday si the new beginni",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Agra",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=80",
+      "status": "Applied",
+      "id": 4
+    },
+    {
+      "workRefId": "WORKID5463321D4",
+      "title": "Need Bikers",
+      "description": "Earn upto Rs 500 everyday si the new beginni",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Noida",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "status": "Executed",
+      "id": 5
+    },
+    {
+      "workRefId": "WORKID5463321D4",
+      "title": "Need Bikers",
+      "description": "Earn upto Rs 500 everyday si the new beginni",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Noida",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "status": "Executed",
+      "id": 6
+    },
+    {
+      "workRefId": "WORKID5463321D4",
+      "title": "Need Bikers",
+      "description": "Earn upto Rs 500 everyday si the new beginni",
+      "workCategoryTitle": "Biker Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "workCategoryBanner": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "location": "Noida",
+      "isGeneratorBusiness": "Business",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "status": "Executed",
+      "id": 7
     }
   ],
+"location":[
+  {
+    "location":"b-78 D Kalindri Kunj, Dehli, 201301",
+    "locatioCodes":"32.0098636,77.3117298",
+    "locationTitle":"Home",
+    "id": 1
+  },
+  {
+    "location":"B-154, Kutumbh Care Pvt Ltd, sector-63, noida, 201301",
+    "locatioCodes":"32.0098636,77.3117298",
+    "locationTitle":"Office",
+    "id": 2
+  }
+],
   "work_app":[
     {
       "applicantName":"Arvind",
       "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
       "isApplicantBusiness":"Business",
       "applicationRefId":"APPLID3212",
-      "adminStatus":"REDRAFT",
-      "generatorStatus":"APPROVED",
-      "final_status":"APPROVAL_PENDING",
+      "adminStatus":"Started",
       "workCategoryTitle": "Biker Onboarding",
       "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
       "generatorName": "Swiggy",
@@ -66,15 +134,202 @@
       "isApplicantBusiness":"Business",
       "applicationRefId":"APPLID3212",
       "adminStatus":"Redraft",
-      "generatorStatus":"Approved",
-      "final_status":"Approval_Pending",
       "workCategoryTitle": "Teacher Onboarding",
       "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
       "generatorName": "Swiggy",
       "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
       "isGeneratorBusiness": "Business",
       "id": 2
+    },
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"Approval Pending",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 3
+    },
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"Applied",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 4
+    },
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"Rejected",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 5
+    },
+    {
+      "applicantName":"Arvind",
+      "applicanPic":"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1688888642~exp=1688889242~hmac=f51fbb76d9531b224d1594499955423cee0eafeb6930e3413487768568cac9df",
+      "isApplicantBusiness":"Business",
+      "applicationRefId":"APPLID3212",
+      "adminStatus":"Approved",
+      "workCategoryTitle": "Teacher Onboarding",
+      "workCategoryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus officiis earum eos harum aperiam inventore labore sit? Nam excepturi, facere enim qui at necessitatibus.",
+      "generatorName": "Swiggy",
+      "generatorPic": "https://cdn.pixabay.com/photo/2016/12/28/08/15/hummingbird-1935665_1280.png",
+      "isGeneratorBusiness": "Business",
+      "id": 6
+    }
+  ],
+  "personal":[
+    {
+      "id":"1",
+      "photo":"https://images.unsplash.com/photo-1644832512961-a8514afdfed7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "name":"Lavi Sharma",
+      "phone": "9808941976",
+      "email":"lavis8461@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "dob":"07/06/2002",
+      "gender":"Female",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Active",
+      "country":"India",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    },
+    {
+      "id":"2",
+      "photo":"https://images.unsplash.com/photo-1468818461933-b1d79f62434e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      "name":"Saksham Misra",
+      "phone": "9808941976",
+      "email":"lavis8461@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "dob":"07/06/2002",
+      "gender":"Female",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Pending",
+      "country":"India",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    },
+    
+    {
+      "id":"3",
+      "photo":"https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "name":"Riya Gupta",
+      "phone": "9808941976",
+      "email":"lavis8461@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "dob":"07/06/2002",
+      "gender":"Female",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Suspended",
+      "country":"India",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    }   
+  ],
 
+
+  "business":[
+    {
+      "id":"1",
+      "photo":"https://images.unsplash.com/photo-1644832512961-a8514afdfed7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "name":"Gupta Industries",
+      "phone": "9808941976",
+      "email":"person.mail@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "landline":"012-24568-456",
+      "website":"guptaindustries.in",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Active",
+      "country":"India",
+      "industry":"Food Industry",
+      "size":"100-200",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    },
+    {
+      "id":"2",
+      "photo":"https://images.unsplash.com/photo-1468818461933-b1d79f62434e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      "name":"TATA Industries",
+      "phone": "9808941976",
+      "email":"person.mail@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "landline":"012-24568-456",
+      "website":"guptaindustries.in",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Pending",
+      "country":"India",
+      "industry":"Food Industry",
+      "size":"100-200",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    },
+    
+    {
+      "id":"3",
+      "photo":"https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "name":"Shyam Industries",
+      "phone": "9808941976",
+      "email":"person.mail@gmail.com",
+      "intro":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "landline":"012-24568-456",
+      "website":"guptaindustries.in",
+      "address":"Sector 62, mamura", 
+      "city":"Noida",
+      "postal_code":"201301",
+      "state":"Uttar Pradesh",
+      "status":"Suspended",
+      "country":"India",
+      "industry":"Food Industry",
+      "size":"100-200",
+      "createdOn":"12/07/2023",
+      "modifiedOn":"13/07/2023"
+    }   
+  ],
+  "request":[
+    {
+      "id":"1",
+      "name":"Lavi Sharma",
+      "description":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "amount":"1000",
+      "picture":"https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+    },
+    {
+      "id":"2",
+      "name":"Devashish Bala",
+      "description":"Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something. There has to be a balance between your mental satisfaction and the financial needs of your company.",
+      "amount":"5000",
+      "picture":"https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
     }
   ]
 }

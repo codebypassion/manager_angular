@@ -16,7 +16,7 @@
               role="tabpanel"
               aria-labelledby="top-tasks-tab"
             >
-              <div class="row mb-3 p-0 d-flex justify-content-between">
+              <div class="row mb-3 p-0 d-flex">
                 <div
                   class="left-header col-md-6 horizontal-wrapper ps-0 d-flex align-items-center"
                 >
@@ -43,8 +43,8 @@
                 >
                   <li class="onhover-dropdown p-0 me-0">
                     <div class="d-flex profile-media">
-                      <div class="d-flex statusFilter justify-content-around">
-                        <span class="status">Final Status</span>
+                      <div class="d-flex statusFilter">
+                        <span class="status">Status</span>
                         <span class="material-symbols-outlined">
                           expand_more
                         </span>
@@ -56,6 +56,10 @@
                       id="top-tab"
                       role="tablist"
                     >
+                    
+                    <li class="nav-item newNavItem">
+                      <a class="nav-link removePadd newNavLink">All</a>
+                    </li>
                       <li class="nav-item newNavItem">
                         <a class="nav-link removePadd newNavLink">Started</a>
                       </li>
@@ -86,15 +90,15 @@
                   <table class="table fold-table">
                     <thead>
                       <tr class="bdrBtmBlue">
-                        <th class="cstmTh" scope="col">Executor</th>
-                        <th class="cstmTh" scope="col">Exec Acc Type</th>
-                        <th class="cstmTh" scope="col">ExeRef-ID</th>
-                        <!-- <th class="cstmTh" scope="col">Admin Status</th>
-                          <th class="cstmTh" scope="col">Gen Status</th> -->
-                        <th class="cstmTh" scope="col">Final Status</th>
-                        <th class="cstmTh" scope="col">Work Details</th>
-                        <th class="cstmTh" scope="col">Generator</th>
-                        <th class="cstmTh" scope="col">Gen Acc Type</th>
+                        <th class="cstmTh font_Deg" scope="col">Executor</th>
+                        <th class="cstmTh font_Deg" scope="col">Executor Type</th>
+                        <th class="cstmTh font_Deg" scope="col">Reference ID</th>
+                        <th class="cstmTh font_Deg" scope="col">Work Details</th>
+                        <th class="cstmTh font_Deg" scope="col">Status</th>
+                        <th class="cstmTh font_Deg" scope="col">Remuneration</th>
+                        <th class="cstmTh font_Deg" scope="col">Generator</th>
+                        <th class="cstmTh font_Deg" scope="col">Generator Type</th>
+                        <th class="cstmTh font_Deg" scope="col">End Date</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -113,7 +117,7 @@
                                 class="div2 d-flex flex-column align-items-start"
                               >
                                 <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
+                                <p class="mb-0 gene_time">2 mins ago</p>
                               </div>
                             </div>
                           </a>
@@ -121,7 +125,7 @@
 
                         <td class="cstmTd">
                           <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
+                            <p class="border rounded_deg px-1 mb-0 font11px">
                               Business
                             </p>
                           </div>
@@ -130,48 +134,51 @@
                         <td class="cstmTd">
                           <div class="d-flex">
                             <a
-                              class="text-underline"
+                              class="text-underline workRefId"
                               routerLink="/ongoing-work-details"
                             >
                               EXEID32122ED4RF</a
                             >
                           </div>
                         </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
+                        
                         <!-- <td class="cstmTd">Biker Onboarding</td> -->
                         <td class="cstmTd minWidth300">
                           <div
-                            class="d-flex flex-column align-items-start position-relative"
+                          class="d-flex flex-column align-items-start position-relative"
                           >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
+                          <p class="mb-0 headTitle">Need Bikers</p>
+                          <p class="catDesc mx-0 px-0">
+                            Earn upto Rs 500 everyday si the new beginning and
+                            that why you are the best
+                          </p>
+                          <p class="tooltip newTooltipPosition">
+                            Earn upto Rs 500 everyday si the new beginning and
+                            that why you are the best Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Maxime placeat
+                            repudiandae iusto ipsa eligendi provident deleniti
+                            aspernatur quaerat suscipit deserunt tenetur enim,
+                            earum sunt, voluptatibus non dignissimos
+                            repellendus minima adipisci.
+                          </p>
+                        </div>
+                      </td>
+                      <td class="cstmTd minWidth145">
+                        <div class="d-flex">
+                          <p class="border rounded px-1 mb-0 pending">
+                            Approval Pending
+                          </p>
+                        </div>
+                      </td>
+                      <td class="cstmTd">
+                        <p class="data reu_deg">₹100</p>
+                      </td>
                         <td class="cstmTd">
                           <div class="grouping d-flex justify-content-evenly">
                             <div class="div1">
                               <img
                                 class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
+                                src="https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
                                 alt=""
                               />
                             </div>
@@ -179,19 +186,23 @@
                               class="div2 d-flex flex-column align-items-start"
                             >
                               <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
+                              <p class="mb-0 gene_time">2 mins ago</p>
                             </div>
                           </div>
                         </td>
                         <td class="cstmTd">
                           <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
+                            <p class="border rounded_deg px-1 mb-0 font11px">
                               Business
                             </p>
                           </div>
-                        </td>
-                      </tr>
+                        </td>    
+                        <td class="cstmTd">
+                          <p>15-07-2023</p>
+                        </td>   
+                                         
 
+                      </tr>
                       <tr class="view bgroud mb-1">
                         <td class="cstmTd minWidthName">
                           <a href="../others/personal.html">
@@ -207,7 +218,7 @@
                                 class="div2 d-flex flex-column align-items-start"
                               >
                                 <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
+                                <p class="mb-0 gene_time">2 mins ago</p>
                               </div>
                             </div>
                           </a>
@@ -215,7 +226,7 @@
 
                         <td class="cstmTd">
                           <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
+                            <p class="border rounded_deg px-1 mb-0 font11px">
                               Business
                             </p>
                           </div>
@@ -224,48 +235,51 @@
                         <td class="cstmTd">
                           <div class="d-flex">
                             <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
+                              class="text-underline workRefId"
+                              routerLink="/ongoing-work-details"
                             >
                               EXEID32122ED4RF</a
                             >
                           </div>
                         </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
+                        
                         <!-- <td class="cstmTd">Biker Onboarding</td> -->
                         <td class="cstmTd minWidth300">
                           <div
-                            class="d-flex flex-column align-items-start position-relative"
+                          class="d-flex flex-column align-items-start position-relative"
                           >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
+                          <p class="mb-0 headTitle">Need Bikers</p>
+                          <p class="catDesc mx-0 px-0">
+                            Earn upto Rs 500 everyday si the new beginning and
+                            that why you are the best
+                          </p>
+                          <p class="tooltip newTooltipPosition">
+                            Earn upto Rs 500 everyday si the new beginning and
+                            that why you are the best Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Maxime placeat
+                            repudiandae iusto ipsa eligendi provident deleniti
+                            aspernatur quaerat suscipit deserunt tenetur enim,
+                            earum sunt, voluptatibus non dignissimos
+                            repellendus minima adipisci.
+                          </p>
+                        </div>
+                      </td>
+                      <td class="cstmTd minWidth145">
+                        <div class="d-flex">
+                          <p class="border rounded px-1 mb-0 pending">
+                            Approval Pending
+                          </p>
+                        </div>
+                      </td>
+                      <td class="cstmTd">
+                        <p class="data reu_deg">₹100</p>
+                      </td>
                         <td class="cstmTd">
                           <div class="grouping d-flex justify-content-evenly">
                             <div class="div1">
                               <img
                                 class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
+                                src="https://images.unsplash.com/photo-1652274730844-990bea61e1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
                                 alt=""
                               />
                             </div>
@@ -273,582 +287,25 @@
                               class="div2 d-flex flex-column align-items-start"
                             >
                               <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
+                              <p class="mb-0 gene_time">2 mins ago</p>
                             </div>
                           </div>
                         </td>
                         <td class="cstmTd">
                           <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
+                            <p class="border rounded_deg px-1 mb-0 font11px">
                               Business
                             </p>
                           </div>
-                        </td>
+                        </td>    
+                        <td class="cstmTd">
+                          <p>15-07-2023</p>
+                        </td>   
+                                         
+
                       </tr>
 
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
 
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="view bgroud mb-1">
-                        <td class="cstmTd minWidthName">
-                          <a href="../others/personal.html">
-                            <div class="grouping d-flex justify-content-evenly">
-                              <div class="div1">
-                                <img
-                                  class="img-30 me-2 rounded-circle"
-                                  src="../assets/images/avtar/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="div2 d-flex flex-column align-items-start"
-                              >
-                                <p class="mb-0 headTitle">Saksham Mishra</p>
-                                <p class="mb-0">2 mins ago</p>
-                              </div>
-                            </div>
-                          </a>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <a
-                              class="text-underline"
-                              href="ongoing_work_d.html"
-                            >
-                              EXEID32122ED4RF</a
-                            >
-                          </div>
-                        </td>
-                        <td class="cstmTd minWidth145">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 pending">
-                              Approval Pending
-                            </p>
-                          </div>
-                        </td>
-
-                        <!-- <td class="cstmTd">Biker Onboarding</td> -->
-                        <td class="cstmTd minWidth300">
-                          <div
-                            class="d-flex flex-column align-items-start position-relative"
-                          >
-                            <p class="mb-0 headTitle">Need Bikers</p>
-                            <p class="catDesc mx-0 px-0">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best
-                            </p>
-                            <p class="tooltip newTooltipPosition">
-                              Earn upto Rs 500 everyday si the new beginning and
-                              that why you are the best Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Maxime placeat
-                              repudiandae iusto ipsa eligendi provident deleniti
-                              aspernatur quaerat suscipit deserunt tenetur enim,
-                              earum sunt, voluptatibus non dignissimos
-                              repellendus minima adipisci.
-                            </p>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="grouping d-flex justify-content-evenly">
-                            <div class="div1">
-                              <img
-                                class="img-30 me-2 rounded-circle"
-                                src="https://images.freeimages.com/images/large-previews/09e/moon-art-1641879.png"
-                                alt=""
-                              />
-                            </div>
-                            <div
-                              class="div2 d-flex flex-column align-items-start"
-                            >
-                              <p class="mb-0 headTitle">Swiggy</p>
-                              <p class="mb-0">2 mins ago</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="cstmTd">
-                          <div class="d-flex">
-                            <p class="border rounded px-1 mb-0 font11px">
-                              Business
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
                 </div>
